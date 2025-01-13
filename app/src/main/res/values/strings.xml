@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Nama Aplikasi -->
+    <string name="app_name">SIM Card App</string>
+    <string name="add_button">Add a new item</string>
+
+
+    <!-- Halaman Utama -->
+    <string name="main_title">Daftar Kepala Keluarga</string>
+    <string name="add_kk">Tambah Data KK</string>
+
+    <!-- Halaman Tambah Data -->
+    <string name="add_data_title">Tambah Data KK</string>
+    <string name="enter_kk_name">Masukkan Nama Kepala Keluarga</string>
+    <string name="add_sim">Tambah Kartu SIM</string>
+    <string name="save_data">Simpan Data</string>
+    <string name="cancel">Batal</string>
+
+    <!-- Halaman Detail -->
+    <string name="detail_title">Detail KK</string>
+    <string name="delete_kk">Hapus Data KK</string>
+
+    <!-- Pesan -->
+    <string name="data_saved">Data berhasil disimpan!</string>
+    <string name="data_deleted">Data berhasil dihapus!</string>
+
+    <string name="text_kk_name">Nama Kepala Keluarga</string>
+</resources>

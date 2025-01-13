@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        app:title="Detail Nomor Telepon"
+        app:titleTextColor="@android:color/white"
+        android:elevation="4dp"
+        app:navigationIconTint="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <!-- Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- KK Name -->
+            <TextView
+                android:id="@+id/kk_name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Kepala Keluarga"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@drawable/background_textview"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+            <!-- SIM List Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon dan Provider Telepon:"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- SIM List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_sim"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/recyclerview_background"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Delete Button -->
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hapus KK"
+                android:textStyle="bold"
+                android:backgroundTint="@color/red_500"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

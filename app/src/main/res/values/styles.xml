@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema Aplikasi -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Warna Utama -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Warna Latar -->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+
+        <!-- Warna Toolbar -->
+        <item name="actionBarTheme">@style/ActionBarTheme</item>
+    </style>
+
+    <!-- Tema untuk Toolbar -->
+    <style name="ActionBarTheme" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>
+    </style>
+
+    <!-- Gaya Teks di Toolbar -->
+    <style name="ActionBarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/backgroundColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>
